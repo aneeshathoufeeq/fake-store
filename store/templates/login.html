@@ -1,0 +1,17 @@
+{%extends 'base1.html'%}
+{%load static%}
+
+<!-- carousel  -->
+
+{%block title%}
+Login
+{%endblock title%}
+
+{% block content %}
+     <form action="" method="post">
+    {%csrf_token%}
+    {{form}}
+    <button type="submit">login</button>
+  </form>
+    <!-- <button type="submit">Register</button> -->
+    {% endblock content %}
